@@ -1,0 +1,32 @@
+#posts {
+    background-color: pink;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.postContainer {
+    background-color: #dddddd;
+    margin: 15px;
+    padding: 20px;
+}
+
+.postContainer:hover {
+    background-color: #eeeeee;
+}
+
+.name {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+p {
+    font-size: 16px;
+    color: #333333;
+}
+
+@media (min-width: 768px) {
+
+    #posts {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
